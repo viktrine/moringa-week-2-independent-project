@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Akan Name Finder</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
+    <script language="JavaScript" type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="jumbotron">
-            <h1>Akan Name Finder</h1>
-            <p>Ever wondered what day of the week you were born? Do you want to get a special Akan name based on your day of the week that you were born?</p>
-            <p>With your date of birth we have your answer</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
         <div class="row">
-          <div class="col-12">
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputYear" class="form-label">Year of Birth</label>
-                  <input type="text" class="form-control" id="exampleInputYear" aria-describedby="yearHelp">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1>Akan Name Finder</h1>
+                    <p>Ever wondered what day of the week you were born? Do you want to get a special Akan name based on
+                        your day of the week that you were born?</p>
+                    <p>With your date of birth we have your answer</p>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputMonth" class="form-label">Month of Birth</label>
-                  <input type="text" class="form-control" id="exampleInputMonth" aria-describedby="monthHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputDay" class="form-label">Day of Birth</label>
-                  <input type="text" class="form-control" id="exampleInputDay" aria-describedby="dayHelp">
-                </div>
-                <button type="submit" class="btn btn-primary">Check</button>
-              </form>
-          </div>
-      </div>
-    </div>
-  </body>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form onsubmit="myFunction(event)">
+                    <div class="mb-3">
+                        <label for="exampleInputYear" class="form-label">Year of Birth</label>
+                        <input type="text" class="form-control" id="exampleInputYear" aria-describedby="yearHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputMonth" class="form-label">Month of Birth</label>
+                        <input type="text" class="form-control" id="exampleInputMonth" aria-describedby="monthHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputDay" class="form-label">Day of Birth</label>
+                        <input type="text" class="form-control" id="exampleInputDay" aria-describedby="dayHelp">
+                    </div>
+
+                    Gender
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="gendermale">
+                        <label class="form-check-label" for="gender">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="genderfemale" checked>
+                        <label class="form-check-label" for="gender">
+                            Female
+                        </label>
+                    </div>
+                    <br>
+                    <input class="btn btn-primary checkButton" type="submit">
+                </form>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-12">
+                <h3><span id="akan">Your Akan name is </span></h3>
+            </div>
+        </div>
+
+</body>
+<script src="js/script.js"></script>
+
 </html>
