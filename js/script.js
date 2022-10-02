@@ -32,8 +32,9 @@ function myFunction(event) {
         }else{
             var akanName = "Unkonwn";
         }
-        // document.getElementById('exampleInputDay').textContent=akanName;
-        alert(akanName);
+        // clear already existing code and add new according to calculation
+        document.getElementById('akan').clear;
+        document.getElementById('akan').textContent=akanName;
     } else {
         alert("Kindly enter valid day and month");
     }
