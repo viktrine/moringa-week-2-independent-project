@@ -20,4 +20,4 @@ MIT
 The software is supplied under rights to use, share, change
 
 ## Link
-Visit the site [here](https://viktrine.github.io/moringa-week-1-independent-project)
+Visit the site [here](https://viktrine.github.io/moringa-week-2-independent-project)
